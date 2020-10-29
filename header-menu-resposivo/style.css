@@ -1,0 +1,201 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* background-color: black; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rotar {
+        width: 120px;
+        animation: rotar-spin infinite 20s linear;
+    }
+}
+
+@keyframes rotar-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.main-header {
+    background-image: linear-gradient(to bottom, #0080ff, black);
+    box-shadow: 5px 5px 8px black;
+    width: 100%;
+    /*AGREGANDO  */
+    /* background-color: red; */
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*  */
+}
+
+.perfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 5px white;
+    z-index: 20;
+}
+
+.header-contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    padding-top: 18px;
+    /* agregandi */
+    background-color: red;
+}
+
+.logoFis {
+    background: url(./fis.png) no-repeat center;
+    background-size: cover;
+    transition: all 1.3s;
+}
+
+.header-contenedor-logo:hover .logoFis {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px yellow;
+    transform: rotate(360deg) scale(0.94);
+}
+
+.header-contenedor-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-titulo {
+    font-weight: normal;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-titulo-h1 {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
+    font-family: "Knewave", cursive;
+    text-shadow: 5px 5px 5px black;
+    transition: all 1s;
+}
+
+.header-titulo-h1:hover {
+    transform: scale(1.1);
+    font-style: normal;
+}
+
+.header-contenedor-perfil {
+    display: flex;
+}
+
+.foto {
+    background: url(./foto.jpg) no-repeat left;
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 1.3s;
+}
+
+.perfil--foto:hover .foto {
+    box-shadow: 0px 0px 20px 10px #0055ff;
+    transform: rotate(365deg) scale(0.94);
+}
+
+.perfil--redesSociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.icono {
+    font-size: 20px;
+    margin: 0 10px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.icono:hover {
+    cursor: pointer;
+    transform: scale(1.35);
+}
+
+.icon-facebook2:hover {
+    color: #2f71ff;
+}
+
+.icon-whatsapp:hover {
+    color: #00bb2d;
+}
+
+.icon-gmail2:hover {
+    color: #db4a39;
+}
+
+/* 
+    *****************************
+            NAV BAR
+    *****************************
+ */
+
+ /* agregando */
+ .main-navbar{
+     background-color: seagreen;
+ }
+.navbar-contenedor {
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.navbar-contenedor-menu {
+    margin-top: -13px;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu--items {
+    list-style: none;
+}
+
+.menu__active {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 3px 5px 2px white;
+    background-image: linear-gradient(#0080ff, black);
+    border-bottom: solid 2px #0080ff;
+}
+
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 16px 34px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-image: linear-gradient(#0059b3, black);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 4px 5px black;
+}

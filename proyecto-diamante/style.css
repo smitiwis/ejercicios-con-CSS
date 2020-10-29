@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.container1{
+    border-style:  solid;
+    border-color:  transparent transparent red transparent;
+    border-width: 0 100px 100px 100px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 1px;
+}
+.container2{
+    margin-top: 0;
+    border-style: solid;
+    border-color: red transparent transparent   transparent;
+    border-width:  300px 200px 0 200px;
+    width: 400px;
+    height: 100px;
+}
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+.
+ 
+ 
+ 
+ 
+ 
+ 
+ 

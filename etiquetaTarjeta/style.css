@@ -1,0 +1,54 @@
+*,::before, ::after{
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+
+
+.tarjeta {
+    width: 350px;
+    height: 430px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 15px;
+    margin: 200px auto;
+    padding: 25px 20px;
+    position: relative;
+}
+
+.tarjeta__cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.tarjeta__cont:hover .tarjeta__oferta{
+    transform: scale(1.15);
+}
+
+.tarjeta__oferta {
+    background: url(./felz.jpg) center/cover;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border: solid 3px rgb(255, 0, 149);
+    box-shadow: 0px 0px 10px 5px rgb(255, 0, 149);
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.luis{
+    content: '50% Dcto.';
+    position: absolute;
+    background-color: yellow;
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+    width: 100%;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+    transform: translateX(42%) rotate(45deg)  translateY(15px) ;
+}

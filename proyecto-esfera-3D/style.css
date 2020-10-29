@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.esfera {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 10000px;
+    perspective-origin: center center;
+    animation: rotar 2s infinite linear ;
+    transform-style: preserve-3d;
+
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    border: solid 2px white;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    font-size: 2em;
+}
+.circulo:nth-child(1) {
+    transform: rotateY(0deg);
+}
+.circulo:nth-child(2) {
+    transform: rotateY(40deg);
+}
+.circulo:nth-child(3) {
+    transform: rotateY(80deg);
+}
+.circulo:nth-child(4) {
+    transform: rotateY(120deg);
+}
+.circulo:nth-child(5) {
+    transform: rotateY(160deg);
+}
+.circulo:nth-child(6) {
+    transform: rotateY(200deg);
+}
+.circulo:nth-child(7) {
+    transform: rotateY(240deg);
+}
+.circulo:nth-child(8) {
+    transform: rotateY(280deg);
+}
+.circulo:nth-child(9) {
+    transform: rotateY(320deg);
+}
+
+.circulo:nth-child(3n){
+    border-color: blue;
+}
+.circulo:nth-child(odd){
+    border-color: yellow;
+}
+.circulo:nth-child(3n-1){
+    border-color: rgb(0, 255, 55);
+}
+.circulo:nth-child(3n+1){
+    border-color: rgb(255, 0, 255);
+}
+.circulo:first-child{
+    border-color: red;
+}
+.circulo:last-child{
+    border-color: rgb(255, 255, 255);
+    
+}
+@keyframes rotar{
+    to{
+        transform: rotateY(360deg);
+    }
+}
